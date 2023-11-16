@@ -1,0 +1,1 @@
+web: gunicorn nuevoMM.wsgi --log-file -
