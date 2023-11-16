@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block titulo %} LISTA DE REGISTRO {% endblock %}
+{% load static %}
+{% block contenido%} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'MM1.ico'%}" type="imagenes/ico" />
+	<link rel="stylesheet" type="text/css" href="inicio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+	<title>REGISTRO M&M</title>
+
+	
+
+</head>
+<body>
+	
+<style>
+   body {
+	background:#272729;
+			margin: 0;
+			padding: 0;
+			font-family: 'Lora', serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+    
+h1{
+		color: #E67710;
+		font-family: 'Archivo Black', sans-serif;
+		font-weight: normal;
+}
+
+	
+    tr{
+        color: #090909;
+        background-color: #090909;
+        border: 1px solid #ff7f50;
+        box-shadow: 0px 0px 10px #ff8c00;
+    }
+</style>
+<div class="card">
+    <div class="card-header">
+      M&M POWER GYM
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">REGISTRO M&M</h4>
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">Tipo de usuario</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Clave socio</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for registro in registro%}
+                    <tr class="">
+                        <td scope="row">{{registro.tipo_usuario}}</td>
+                        <td>{{registro.nombre}}</td>
+                        <td>{{registro.telefono}}</td>
+                        <td>{{registro.email}}</td>
+                        <td>{{registro.cve_sociofk}}</td>
+                        <td>
+                            <a name="" id="" class="btn btn-danger" href="{%url 'eliminarRegistro' registro.tipo_usuario %}" role="button">Borrar</a>
+                            <a name="" id="" class="btn btn-info" href="#" role="button">Editar</a>
+                        </td>
+                    </tr>
+                   {%endfor%}
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+{% endblock %}

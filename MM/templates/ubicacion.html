@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block titulo %} UBICACIÓN {% endblock %}
+{% load static %}
+{% block contenido %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'MM1.ico'%}" type="imagenes/ico" />
+	<link rel="stylesheet" type="text/css" href="ubicacion.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+	<title>UBICACIÓN</title>
+</head>
+<body>
+	
+
+<h2 align="center">UBICACIÓN M&M POWER GYM</h2>
+<div class="galeria">
+<img src="{%static 'MM.jpg'%}" width="560"  tittle="M&M POWER GYM">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15029.525469154016!2d-99.394349652496!3d19.653728614510793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d217b77fed2f5b%3A0x46516f303c65fef4!2sM%26M%20POWER%20GYM!5e0!3m2!1ses!2smx!4v1684521587823!5m2!1ses!2smx" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>	
+<div>
+		<fieldset>
+<br><br><legend>CONTACTO M&M</legend><br>
+<ul>
+	<p>La empresa tiene como propósito contar con la mejor calidad en los servicios de maquinaria de gimnasio profesional, con instalaciones adecuadas y brindar clases especializadas a precios accesibles.</p>
+<li><b>Nombre de la empresa: &nbsp; </b> M&M POWER GYM</li>
+<li><b>Nombre del dueño: &nbsp; </b> Miguel Ángel Espejel Bejarano</li>
+<li><b>Dirección: &nbsp; </b> Av. Morelos, Col. San José el Vidrio, 54449 MÉXICO, Méx.</li>
+<li><b>Tel: &nbsp; </b> 5621284228</li><br><br>
+</ul>
+</fieldset>
+	</div>
+	
+
+	
+
+
+	<br><br><p class="cv">CONSULTA AL DISEÑADOR DEL SITIO WEB<a class="cvl" href="CVitae">&nbsp;&nbsp; &nbsp;&nbsp;CURRICULUM VITAE DEL AUTOR
+</body>
+</html>
+
+<style>
+    body{
+		background-color: #272729;
+	}
+
+h2{
+		color: #10D3E6;
+		font-family: 'Lexend', sans-serif;
+		font-weight: normal;
+		font-size: 40px;
+}
+
+legend{
+		text-align: center;
+		color: #FFFFFF;
+		font-family: 'Belleza', sans-serif;
+		font-size: 40px;
+}
+.galeria{
+	width: 200%;
+}
+.galeria img{
+	vertical-align: top;
+	opacity: 0.4;
+	width: 300px;
+	margin: 40px;
+	padding: 20px;
+	border: 2px solid #484848;
+}
+.galeria img:hover{
+	opacity: 1;
+	border: 1px solid #ffffff;
+}
+ul{
+	text-align: left;
+	color: #FFFFFF;
+	font-family: 'Belleza', sans-serif;
+}
+p{
+		text-align: left;
+		font-family: 'Belleza', sans-serif;
+		color: #FFFFFF;
+		size: 50px;
+}
+
+
+.cv{
+	color: #FFFFFF;
+	text-align: center;
+}
+.cvl{
+	text-decoration: none;
+	color: #E67710;
+	text-align: center;
+}
+</style>
+{% endblock %}

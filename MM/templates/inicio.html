@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block titulo %} INICIO {% endblock %}
+{% load static %}
+{% block contenido %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'MM1.ico'%}" type="imagenes/ico" />
+	<link rel="stylesheet" type="text/css" href="inicio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+	<title>INICIO</title>
+
+</head>
+<body>
+	
+		<fieldset>
+<legend align="center">GIMNASIO <br> CENTRO FITNESS</legend>
+
+<br><br><p> ¡CONOCE NUESTROS PRODUCTOS!</p>
+<div class="img1">
+
+	<br><img src="{%static 'promo1.png'%}" width="400" height=""></td>
+	<img src="{%static 'promo2.png'%}" width="400" height=""></td>
+	<img src="{%static 'promo3.png'%}"width="400" height=""></div>
+<div>
+
+<br> <br><p>HORARIOS:</p>
+<p>Lunes - Viernes &nbsp;&nbsp; &nbsp;&nbsp; 7am - 9pm </p>
+<p>Sabado &nbsp;&nbsp; &nbsp;&nbsp; 8am - 1pm </p>
+<br><br><br>
+
+<h2>Vive la experiencia M&M POWER GYM y disfruta de un buen entrenamiento</h2>
+</fieldset>
+</div>
+	
+<div class="img">
+<br><img src="{%static 'MM.png'%}"></div>
+
+
+
+	
+<p class="cv">CONSULTA AL DISEÑADOR DEL SITIO WEB <a class="cvl" href="CVitae">&nbsp;&nbsp; &nbsp;&nbsp;CURRICULUM VITAE DEL AUTOR
+</body>
+</html>
+   
+   <style type="">
+        body{
+		background-color: #272729;
+	}
+
+	legend{
+		color: #55b1db;
+		text-decoration-color:#FFFFFF ;
+		font-family: 'Lexend', sans-serif;
+		font-size: 80px;
+		/*text-transform: capitalize;*/
+
+	}
+	p{
+		color: #FFFFFF;
+		text-align: center;
+		font-family: 'Belleza', sans-serif;
+		line-height: 30px;
+		font-size: 30px;
+
+	}
+
+h2{
+		color: #E67710;
+		font-family: 'Lexend', sans-serif;
+		text-align: center;
+		font-weight: normal;
+		font-size: 50px;
+}
+
+.img{
+	text-align: center;
+}
+
+.cv{
+	color: #FFFFFF;
+    text-decoration: none;
+	font-size: 20px;
+}
+.cvl{
+	text-decoration: none;
+	color: #E67710;
+	font-size: 20px;
+}
+
+button{
+  text-decoration: none;
+  background-color: #FFFFFF; 
+  border: none;
+  color: #E67710;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+.img1{
+	text-align: center;
+}
+
+
+      </style>
+{% endblock %}

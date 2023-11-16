@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block titulo %} ¿QUIÉNES SOMOS? {% endblock %}
+{% load static %}
+{% block contenido %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'MM1.ico'%}" type="imagenes/ico" />
+	<link rel="stylesheet" type="text/css" href="QuienesS.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+	<title>¿QUIENES SOMOS?</title>
+</head>
+<body>
+
+
+	<h2 align="center"> ¿QUIÉNES SOMOS?</h2>
+	<div>
+<fieldset>
+<legend>NOSOTROS SOMOS M&M POWER GYM</legend>
+<ul>
+	<p>En M&M POWER GYM estamos comprometidos con el buen servicio y atención a nuestros usuarios. Integrado por un equipo de instructores profesionales, M&M POWER GYM te brinda el ambiente más agradable para que tu rutina de ejercicios se ajuste a tus necesidades.<br><br>
+	Nos aseguramos de que cuentes con una excelente atención desde que entras hasta que dejas las instalaciones. Nuestro equipo de profesionales del fitness se compone de instructores que se encuentran siempre a tu disposición.</p><br>
+</ul>
+</fieldset>
+	</div>
+	<div class="galeria">
+	<img src="{%static 'comunidad.jpg'%}" id="comunidad"  >
+	<img src="{%static 'MM.jpg'%}" id="MM"  > 
+	<img src="{%static 'comunidad1.jpg'%}" id="comunidad1" > 
+	</div>
+
+	<p class="cv">CONSULTA AL DISEÑADOR DEL SITIO WEB<a class="cvl" href="CVitae">&nbsp;&nbsp; &nbsp;&nbsp;CURRICULUM VITAE DEL AUTOR
+</body>
+</html>
+
+<style>
+    body{
+	background-color: #272729;
+}
+header{
+			background-color: #090909;
+			color: white;
+			padding: 30px;
+			font-family: 'Archivo Black', sans-serif;
+		}
+h1{
+		color: #E67710;
+		font-family: 'Oswald', sans-serif;
+		font-weight: normal;
+}
+
+h2{
+		color: #10D3E6;
+		font-family: 'Lexend', sans-serif;		
+		font-weight: normal;
+		font-size: 40px;
+}
+
+legend{
+	color: #E67710;
+	text-align: center;
+	font-size: 34px;
+}
+P{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Belleza', sans-serif;
+
+}
+
+
+.cv{
+	color: #FFFFFF;
+}
+.cvl{
+	text-decoration: none;
+	color: #E67710;
+}
+.galeria{
+	width: 200%;
+}
+.galeria img{
+	vertical-align: top;
+	opacity: 0.4;
+	width: 300px;
+	margin: 40px;
+	padding: 20px;
+	border: 2px solid #484848;
+}
+.galeria img:hover{
+	opacity: 1;
+	border: 1px solid #ffffff;
+}
+</style>
+
+{% endblock %}

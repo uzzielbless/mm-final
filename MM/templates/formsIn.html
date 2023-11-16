@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block titulo %} FORMULARIOS {% endblock %}
+{% load static %}
+{% block contenido %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'MM1.ico'%}" type="imagenes/ico" />
+	<link rel="stylesheet" type="text/css" href="inicio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+	<title>FORMULARIOS</title>
+
+	
+
+</head>
+<body>
+		
+        <div class="formularios">
+			<section>
+				<button><a href="registro"> REGISTRO </button><br>
+        		<button><a href="cliente"> CLIENTE </button><br>
+				<button><a href="trabajador"> TRABAJADOR </button><br>
+				<button><a href="crear"> PRODUCTO </button><br>
+				<button><a href="inventario"> INVENTARIO </button><br>
+				<button><a href="proveedores"> PROVEEDORES </button><br>
+				<button><a href="almacen"> ALMACÉN </button><br>
+				<button><a href="proveedor_equipo"> PROVEEDOR EQUIPO </button><br>
+				<button><a href="proveedor_producto"> PROVEEDOR PRODUCTO </button><br>
+				<button><a href="aparatos"> APARATOS</button><br>
+				<button><a href="pedido"> PEDIDO</button><br>
+				<button><a href="rutinas"> RUTINAS</button><br>
+				<button><a href="plan_p"> PLAN PERSONALIZADO</button><br>
+				<button><a href="venta"> VENTA</button><br>
+			</section>
+        </div>
+	
+		<br><br><br>
+<div>
+<p class="cv" href=" "> CONSULTA AL DISEÑADOR DEL SITIO WEB <a class="cvl" href="CVitae">&nbsp;&nbsp; &nbsp;&nbsp;CURRICULUM VITAE DEL AUTOR
+</div>	
+</body>
+</html>
+   
+   <style type="">
+
+  body{
+		background-color: #272729;
+	}
+
+section {
+color: #ffffff;
+padding: 20px;
+margin: 30px;
+background-color: #090909;
+border: 1px solid #ff7f50;
+box-shadow: 0px 0px 10px #ff8c00;
+}
+
+button{
+	color: #FFFFFF;
+	background-color: #272729;
+	size: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+h2{
+		color: #E67710;
+		font-family: 'Lexend', sans-serif;
+		text-align: center;
+		font-weight: normal;
+}
+
+.cv{
+	color: #FFFFFF;
+    text-decoration: none;
+	text-align: center;
+}
+.cvl{
+	text-decoration: none;
+	color: #E67710;
+}
+
+</style>
+{% endblock %}
